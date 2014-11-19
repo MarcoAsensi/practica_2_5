@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<title>Máquina de café StarBocks</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="outer">
+			<h1>Máquina de café StarBocks</h1>
+			<form>
+				<fieldset>
+					<legend>Opciones</legend>
+					<ul>
+						<li><label for="tipo_mezcla">Tipo de Mezcla:</label>
+							<select id="tipo_mezcla" name="tipo_mezcla">
+								<option value="mezcla_casa">Mezcla de la casa</option>
+								<option value="mezcla_cabireña">Mezcla Caribeña</option>
+								<option value="org_colombia">Órganico Colombia</option>
+								<option value="org_peru">Órganico Perú</option>
+							</select>
+						</li>
+						<li>
+							<label class="mostrar" for="natural">Natural</label>
+							<input  type="radio" name="tipo" id="natural">
+						</li>
+						<li>
+							<label class="mostrar" for="tostado">Tostado</label>
+							<input type="radio" name="tipo" checked id="tostado">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Extras</legend>
+					<ul>
+						<li>
+							<label class="mostrar" for="regalo">Para Regalo</label>
+							<input type="checkbox" name="regalo" id="regalo" value="regalo">
+						</li>
+						<li>
+							<label class="mostrar" for="catalogo">Incluír catálogo</label>
+							<input type="checkbox" name="catalogo" id="catalogo" value="catalogo">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Datos de envío</legend>
+					<ul>
+						<li>
+							<label for="nombre">Nombre:</label>
+							<input type="textbox" id="nombre" name="nombre" value="" placeholder="Nombre...">
+						</li>
+						<li>
+							<label for="direccion">Dirección:</label>
+							<input type="textbox" id="direccion" name="direccion" value="" placeholder="Direccion...">
+						</li>
+						<li>
+							<label for="ciudad">Ciudad:</label>
+							<input type="textbox" id="ciudad" name="ciudad" value="" placeholder="Ciudad...">
+						</li>
+						<li>
+							<label for="pais">Pais:</label>
+							<input type="textbox" id="pais" name="pais" value="" placeholder="Pais...">
+						</li>
+						<li>
+							<label for="cod">Código Postal:</label>
+							<input type="textbox" id="cod" name="cod" value="" placeholder="Codigo Postal...">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Información Adicional</legend>
+					<ul>
+						<li>
+							<label for="comentario">Comentarios:</label>
+							<textarea rows="10" id="comentario" name="comentario" placeholder="Introduzca sus comentarios..."></textarea>
+						</li>
+					</ul>
+				</fieldset>
+					<input class="boton" type="button" value="Tramitar">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,162 @@
+#outer{
+    width:100%;
+	max-width:600px;
+	margin:0 auto;
+	border:1px solid;
+    box-sizing: border-box;
+}
+
+h1{
+	text-align:center;
+	color:red;
+}
+
+form ul, form ol {
+  list-style: none;
+  padding: 0;
+}
+
+form ul{
+	margin:0;
+
+}
+
+legend{
+    color:red;
+}
+
+fieldset{
+	margin:3vh 1vw;
+	padding:1vh 1vw;
+    border: 1px solid black;
+}
+
+label{
+	display:inline-block;
+	min-width:15vw;
+	text-align:right;
+	padding:0.5vh 0.5vw;
+	
+}
+
+input[type!=checkbox, type!=radio],select{
+	display:inline-block;
+	color:red;
+	border-radius:5px;
+	border:1px solid black;
+	vertical-align:middle;
+    min-width:15vw;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    red;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    red;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    red;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    red;
+}
+
+textarea{
+	vertical-align:middle;
+	border-radius:5px;
+	border:1px solid black;
+	width:15vw;
+	resize:none;
+}
+
+.boton{
+	display:block;
+	margin:0 auto;
+}
+
+@media screen and (max-device-width: 600px) and (min-device-width: 481px) {
+    body, h1, select, .boton{
+        color:green;
+    }
+    .mostrar{
+        text-align: left;
+    }
+    
+    label:not(.mostrar){
+        display:block;
+        text-align: left;
+    }
+    
+    label{
+        width:25vw;
+    }
+    legend {
+        width: 100%;
+        text-align: right;
+        color:black;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    green;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    green;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    green;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color:    green;
+    }
+    input[type=textbox],select, textarea{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-device-width: 480px) {
+    body, h1, select, .boton{
+        color:black;
+    }
+    
+    label{
+        width:50%;
+    }
+    
+    label:not(.mostrar){
+        display:none;
+    }
+    
+    legend {
+        width: 100%;
+        text-align: center;
+        color:blue;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    black;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    black;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color:    black;
+    }
+    input[type=textbox],select, textarea{
+        width: 100%;
+    }
+}
+
+@media braille and aural and (max-device-width: 480px) {
+    label:not(.mostrar){
+        display:inline-block;
+    }
+}  
+
