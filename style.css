@@ -76,7 +76,7 @@ textarea{
 	margin:0 auto;
 }
 
-@media screen and (max-device-width: 600px) and (min-device-width: 481px) {
+@media screen and (max-width: 600px) and (min-width: 481px) {
     body, h1, select, .boton{
         color:green;
     }
@@ -117,7 +117,7 @@ textarea{
     
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
     body, h1, select, .boton{
         color:black;
     }
